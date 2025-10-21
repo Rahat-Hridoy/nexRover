@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-primary: "Montserrat", sans-serif;
+  --font-second: "Droid Serif";
+  --color-primary: #758b9d;
+  --color-sec: #000;
+  --color-com: #5f7587;
+  --color-head: #1a1a1a;
+  --color-bgPrimary: #071546;
+  --color-bgSecond: #eaf0f7;
+  --color-bgThird: #1b1b1b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.container {
+  @apply px-[24px] md:px-[75px];
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.section-padding {
+  @apply py-[40px] md:py-[80px] lg:py-[100px];
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.hero-head {
+  @apply font-second font-bold text-[32px] md:text-[50px] lg:text-[72px] text-head text-center;
 }
+.hero-head-light {
+  @apply font-second font-bold text-[32px] md:text-[50px] lg:text-[72px] text-white text-center;
+}
+.section-head {
+  @apply font-second font-semibold text-[28px] md:text-[45px] text-head text-center lg:text-left;
+}
+.section-head-light {
+  @apply font-second font-semibold text-[28px] md:text-[45px] text-white text-center lg:text-left;
+}
+.section-head-desc {
+  @apply font-primary  text-[18px] md:text-[22px] text-head leading-[140%];
+}
+.section-head-desc-light {
+  @apply font-primary font-light text-[18px] md:text-[22px] text-white leading-[140%];
+}
+.com-text {
+  @apply font-primary font-medium text-[16px] text-[#5f7587]  tracking-[150%];
+}
+.com-text-light {
+  @apply font-primary font-medium text-[16px] text-white/90  tracking-[150%];
+}
+.dark-screen-pera {
+  @apply font-primary font-light text-[16px];
+}
+.nav-list {
+  @apply font-primary text-primary text-[16px] font-light;
+}
+.hero-list-item {
+  @apply flex items-start justify-start gap-[28px] font-primary text-primary font-extralight text-[16px] leading-[130%];
+}
+.footer-col-title {
+  @apply font-primary text-[16px] text-white font-bold;
+}
+.footer-col-link {
+  @apply flex flex-col items-start gap-y-[16px] mt-[16px] font-extralight;
+}
+.com-btn-primary {
+  @apply font-primary text-[16px] text-[#2ab398] leading-[24px] bg-white p-4 hover:cursor-pointer active:scale-95 duration-200;
+}
+.com-btn-second {
+  @apply font-primary text-[16px] text-white leading-[24px] bg-[#2ab398] p-4 hover:cursor-pointer active:scale-95 duration-200;
+}
+/* About page */
