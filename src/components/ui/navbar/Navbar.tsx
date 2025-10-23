@@ -2,6 +2,29 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+const navlist = [
+  {
+    id: 1,
+    title: "What we do",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "What we do",
+    link: "/",
+  },
+  {
+    id: 3,
+    title: "What we do",
+    link: "/",
+  },
+  {
+    id: 4,
+    title: "What we do",
+    link: "/",
+  },
+];
+
 export const Navbar = () => {
   return (
     <header>
@@ -25,18 +48,6 @@ export const Navbar = () => {
             <ul className="flex flex-col lg:flex-row justify-between items-center gap-[27px]">
               <li className="nav-list">
                 <Link href="#">What We Do</Link>
-              </li>
-              <li className="nav-list">
-                <Link href="how_Work.html">How We Work</Link>
-              </li>
-              <li className="nav-list">
-                <Link href="about.html">About Us</Link>
-              </li>
-              <li className="nav-list">
-                <Link href="#">Success Stories</Link>
-              </li>
-              <li className="nav-list">
-                <Link href="blog.html">Blog</Link>
               </li>
             </ul>
             <ul>

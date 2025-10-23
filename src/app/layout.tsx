@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 // import { MontSerrat, DroidSerif } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/header/Navbar";
-import Footer from "@/components/footer/Footer";
+import { Navbar } from "@/components/ui/navbar/Navbar";
+import Footer from "@/components/ui/footer/Footer";
 
 // const MontSerrat = Montserrat({
 //   variable: "--font-primary",
